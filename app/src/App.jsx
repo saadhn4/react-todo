@@ -5,10 +5,12 @@ const App = () => {
   const [newTask, setNewTask] = useState("");
 
   const addTask = () => {
-    if (!newTask) {
+    const trimmedTask = newTask.trim();
+    if (!trimmedTask) {
       alert("Enter a task.");
+      return;
     }
-    setTasks((t) => [...t, newTask.trim()]);
+    setTasks((t) => [...t, trimmedTask]);
     setNewTask("");
   };
 
