@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [tasks, setTasks] = useState(["Wash","Clean"]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
 
   const addTask = () => {
@@ -31,7 +31,10 @@ const App = () => {
       <button onClick={addTask}>Add</button>
       {tasks.map((task, index) => (
         <p className="text" key={index}>
-          {task} <button className="delete-btn" onClick={() => deleteTask(index)}>Delete</button>
+          {task}{" "}
+          <button className="delete-btn" onClick={() => deleteTask(index)}>
+            Delete
+          </button>
         </p>
       ))}
     </div>

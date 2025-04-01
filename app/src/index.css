@@ -40,7 +40,12 @@ button:hover{
 
 .text{
   margin-top: 30px;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  background-color: rgb(251, 251, 251);
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 .delete-btn{
