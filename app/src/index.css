@@ -46,6 +46,7 @@ button:hover{
   padding: 10px;
   font-weight: bold;
   border-radius: 8px;
+  text-align: center;
 }
 
 .delete-btn{
