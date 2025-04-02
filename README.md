@@ -4,7 +4,8 @@ A simple and clean to-do list application built using **React**. It allows users
 
 ## 🚀 Features
 
-- Add new tasks to the list  
+- Add new tasks to the list
+- Edit existing tasks using a prompt dialog
 - Delete tasks with a single click  
 - Responsive and stylish UI  
 - Input validation to avoid empty tasks
