@@ -18,6 +18,17 @@ const App = () => {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
+  const editTask = (index) => {
+    const updatedTask = prompt("Update Task:", tasks[index]);
+    if (!updatedTask) {
+      alert("Enter a task please");
+      return;
+    }
+    const newTasks = [...tasks];
+    newTasks[index] = updatedTask;
+    setTasks(newTasks);
+  };
+
   const handleInputChange = (e) => {
     setNewTask(e.target.value);
   };
@@ -33,7 +44,10 @@ const App = () => {
       <button onClick={addTask}>Add</button>
       {tasks.map((task, index) => (
         <p className="text" key={index}>
-          {task}{" "}
+          {task}
+          <button className="edit-btn" onClick={() => editTask(index)}>
+            Edit
+          </button>
           <button className="delete-btn" onClick={() => deleteTask(index)}>
             Delete
           </button>

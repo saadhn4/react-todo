@@ -22,7 +22,8 @@ input {
 }
 
 button,
-.delete-btn {
+.delete-btn,
+.edit-btn {
   padding: 14px 20px;
   font-size: 18px;
   background-color: hsl(120, 100%, 25%);
@@ -34,11 +35,11 @@ button,
   transition: 0.15s ease;
 }
 
-button:hover{
+button:hover {
   background-color: hsl(120, 100%, 15%);
 }
 
-.text{
+.text {
   margin-top: 30px;
   font-size: 2rem;
   background-color: rgb(251, 251, 251);
@@ -49,13 +50,23 @@ button:hover{
   text-align: center;
 }
 
-.delete-btn{
+.delete-btn,
+.edit-btn {
   background-color: hsl(0, 100%, 50%);
   margin-left: 10px;
   transition: 0.15s ease;
   cursor: pointer;
 }
 
-.delete-btn:hover{
+.edit-btn {
+  background-color: hsl(45, 100%, 45%);
+}
+
+.edit-btn:hover {
+  background-color: hsl(45, 100%, 35%);
+
+}
+
+.delete-btn:hover {
   background-color: hsl(0, 100%, 40%);
 }
